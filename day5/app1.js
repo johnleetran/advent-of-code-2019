@@ -56,15 +56,15 @@ while(i < Object.keys(dataArray).length){
         i += 2;
     }
     else if (opcode == 4) {
-        let output = dataArray[i + 1]
-        if (C == 1){
-            output = valueA;
-        }else{
-            let memoryLocation = dataArray[i + 1]
-            output = dataArray[memoryLocation]
-        }
+        // let output = dataArray[i + 1]
+        // if (C == 1){
+        //     output = valueA;
+        // }else{
+        //     let memoryLocation = dataArray[i + 1]
+        //     output = dataArray[memoryLocation]
+        // }
         //console.log("opcode 4: ", dataArray[memoryLocation])
-        console.log("output:", output)
+        console.log("output:", valueA)
         i += 2;
     }
     else if(opcode == 5){
