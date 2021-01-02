@@ -58,7 +58,7 @@ class Graph {
                 }
                 distance[edge] = distance[x] + 1;
                 queue.push(edge)
-                visited[edge] = 1
+                visited[edge] = true
             }
         }
         return distance[v];
@@ -131,11 +131,11 @@ for (let d of dataArray) {
 function findMinToSan(startVal, endVal, graph){
     let countOrbits = 0
     let min = graph.minEdgeBFS(startVal, endVal)
-    return min//Math.min(countOrbits, Infinity)
+    return min - 1//Math.min(countOrbits, Infinity)
 }
 
 let startVal = 'YOU'
 let endVal = 'Q7Z'
 let minToSan = findMinToSan(startVal, endVal, graph);
-console.log(minToSan - 1)
+console.log(minToSan)
 
